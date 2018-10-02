@@ -1,0 +1,24 @@
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - dev
+  - master
+
+apt_packages:
+- hugo
+
+before_script:
+- git clone https://github.com/mattouille/bootstrap4 themes/bootstrap4
+script:
+- hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  target_branch: master
+  local_dir: public
+  on:
+    branch: development

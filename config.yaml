@@ -1,0 +1,57 @@
+baseURL: "https://mattouille.com/"
+languageCode: "en-us"
+title: "mattouille.com"
+permalinks:
+  post: /articles/:year-:month/:title
+  page: /:title
+enableEmoji: true
+enableGitInfo: false
+theme: bootstrap4
+enableRobotsTXT: true
+googleAnalytics: UA-49694865-1
+disqusShortname: mattouille
+pygmentsUseClasses: true
+params:
+  author: Matt Ouille
+  description: "Tutorials, opinions, and musings by Matt Ouille"
+  cookie_consent_info_url: http://cookiesandyou.com
+  truncate: true
+  images: 
+  - /img/mattouille-com-logo.png
+  sharing:
+    twitter: true
+    googleplus: false
+    facebook: true
+    reddit: true
+    linkedin: true
+    stumbleupon: true
+    pinterest: false
+    email: true
+  socialMedia:
+    email: matthew.ouille@gmail.com
+    twitter: codencombovers 
+    github: mattouille 
+    stackoverflow: 5854293/matt-o
+    linkedin: mattouille 
+    instagram: code_n_combovers
+
+menu:
+  navbar:
+  - identifier: Tutorials
+    name: Tutorials
+    title: Tutorials
+    url: /categories/tutorials/
+    weight: 15
+  - identifier: Opinions
+    name: Opinions
+    title: Opinions
+    url: /categories/opinions/
+    weight: 20
+  
+frontmatter:
+  date:
+  - :git
+  - :default
+
+blackfriday:
+  fencedCode: true
